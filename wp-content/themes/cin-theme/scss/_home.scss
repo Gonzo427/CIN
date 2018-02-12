@@ -1,0 +1,62 @@
+body.has-header-image {
+	.site-branding-text {
+	    display: inline-block;
+	    vertical-align: middle;
+	    transform: translateY(-40px);
+
+	    h1.site-title {
+	    font-size: 1em;
+	    font-family: "Open Sans", sans-serif;
+	    	}
+		p.site-description{
+			font-family: $font-header;
+			font-size: 4em;
+			opacity: 1;
+		}
+	}
+
+
+
+}
+.intro{
+	font-size: 2em;
+	color: $blue-cadet;
+}
+
+//home page CTA buttons
+.cta-btns{
+	position: absolute;
+    transform: translate(-50%, -10%);
+    bottom: 15%;
+    left: 50%;
+    z-index:10;	
+    a.btn{
+		padding: 10px 35px;
+		margin-bottom: 0;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 1.42857143;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		border-radius: 4px;
+		text-decoration: none;
+		border-radius: 210px;
+		margin: 10px 10px;
+		background-color: $blue-cadet;
+		display: inline-block;
+		border: 2px solid #fff;
+		color: #fff;
+		transition: all linear .3s;
+		-webkit-transition: all linear .3s;	
+		
+		&:hover{
+			background: $green-light;
+			border: 2px solid $blue;
+		}
+    }
+}
+
+//home page section
+article#post-8{
+}

@@ -1,0 +1,151 @@
+/*
+ Theme Name:   CIN theme
+*/
+@media screen and (min-width: 48em) {
+  .navigation-top {
+    bottom: auto; } }
+.navigation-top .site-navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+.navigation-top svg.icon.icon-arrow-right {
+  display: none; }
+.navigation-top .main-navigation li a:hover {
+  color: #47A025; }
+.navigation-top .main-navigation li li:hover {
+  background: #c4deff; }
+
+h1, h2, h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100; }
+
+hr {
+  width: 100%; }
+
+.entry-content a img, .widget a img {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+body.has-header-image .site-branding-text {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateY(-40px); }
+  body.has-header-image .site-branding-text h1.site-title {
+    font-size: 1em;
+    font-family: "Open Sans", sans-serif; }
+  body.has-header-image .site-branding-text p.site-description {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4em;
+    opacity: 1; }
+
+.intro {
+  font-size: 2em;
+  color: #003F91; }
+
+.cta-btns {
+  position: absolute;
+  transform: translate(-50%, -10%);
+  bottom: 15%;
+  left: 50%;
+  z-index: 10; }
+  .cta-btns a.btn {
+    padding: 10px 35px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 4px;
+    text-decoration: none;
+    border-radius: 210px;
+    margin: 10px 10px;
+    background-color: #003F91;
+    display: inline-block;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s; }
+    .cta-btns a.btn:hover {
+      background: #47A025;
+      border: 2px solid #003366; }
+
+.page .panel-content .entry-header {
+  margin-bottom: 2em; }
+.page .panel-content .entry-title {
+  color: #003F91; }
+
+.wpb_about .about_items:hover {
+  background: none; }
+.wpb_about .about_items .find_more_btn {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  background: #003366; }
+  .wpb_about .about_items .find_more_btn:hover {
+    box-shadow: inset 0 68px 0 0 #003F91; }
+.wpb_about p.aboutus_disc1 {
+  font-size: 1.25em; }
+
+#panel1 .entry-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start; }
+  #panel1 .entry-content figure {
+    padding: 10px 15px;
+    height: 100px;
+    width: 32%; }
+    #panel1 .entry-content figure.wp-caption:hover .wp-caption-text {
+      transform: translateY(0px);
+      opacity: 1; }
+    #panel1 .entry-content figure.wp-caption .wp-caption-text {
+      margin: 0.8075em 0;
+      opacity: 0;
+      transition: .25s linear;
+      text-align: center;
+      font-size: .9em;
+      background: #E5F4E3;
+      padding: 5px;
+      transform: translateY(-50px); }
+    #panel1 .entry-content figure.wp-caption img[class*="wp-image-"]:hover {
+      filter: gray;
+      /* IE6-9 */
+      -webkit-filter: grayscale(1);
+      /* Google Chrome, Safari 6+ & Opera 15+ */
+      filter: grayscale(1);
+      /* Microsoft Edge and Firefox 35+ */ }
+
+#panel2 {
+  background-image: linear-gradient(#edf5ff, #fff); }
+  #panel2 header h2 {
+    font-size: 3em;
+    text-align: center; }
+  #panel2 .entry-content {
+    background: #fff; }
+    #panel2 .entry-content p {
+      height: 180px;
+      float: left;
+      width: 46%;
+      margin: 0 2%; }
+      #panel2 .entry-content p .sponsor-link {
+        box-shadow: 0px 0px 0px 0px grey; }
+        #panel2 .entry-content p .sponsor-link .sponsor-img {
+          padding: 10%; }
+
+footer {
+  background: #00264d;
+  color: white; }
+  footer h2.widget-title {
+    color: white; }
+  footer label {
+    color: white;
+    font-weight: 100; }
+  footer input[type="submit"] {
+    background-color: #47A025; }
+    footer input[type="submit"]:hover {
+      background-color: #50b52a; }
+
+/*# sourceMappingURL=styles.css.map */

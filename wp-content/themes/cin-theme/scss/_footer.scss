@@ -1,0 +1,18 @@
+footer{
+	background: darken($blue, 5%);
+	color: white;
+
+	h2.widget-title{
+		color: white;
+	}
+	label{
+		color: white;
+		font-weight: 100;
+	}
+	input[type="submit"]{
+		background-color: $green-light;
+		&:hover{
+			background-color: lighten($green-light, 5%);
+		}
+	}
+}

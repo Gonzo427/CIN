@@ -1,0 +1,14 @@
+h1, h2, h3{
+	font-family: $font-header;
+	font-weight: 100;
+}
+
+
+hr{
+	width: 100%;
+}
+
+.entry-content a img, .widget a img{
+	 -webkit-box-shadow: none;
+     box-shadow: none;
+}

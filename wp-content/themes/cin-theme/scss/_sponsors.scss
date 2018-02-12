@@ -1,0 +1,27 @@
+#panel2{
+	background-image: linear-gradient(lighten($blue-cadet, 68%), #fff);
+	header{
+		h2{
+			font-size: 3em;
+			text-align: center;
+		}
+	}
+	.entry-content{
+		background: #fff;
+		p{
+			height: 180px;
+		    float: left;
+		    width: 46%;
+		    margin: 0 2%;
+
+			.sponsor-link{
+				box-shadow: 0px 0px 0px 0px grey;
+				.sponsor-img{
+					padding: 10%;
+				}
+			}
+			
+		}
+	}
+	
+}

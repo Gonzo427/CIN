@@ -1,0 +1,30 @@
+.navigation-top {
+    @media screen and (min-width: 48em){
+        bottom: auto;
+    }
+    .site-navigation-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    svg.icon.icon-arrow-right {
+        display: none;
+    }
+    .main-navigation{
+        li{
+            a{
+                &:hover{
+                    color: $green-light;
+                }
+            }
+            li{
+                &:hover{
+                    background: lighten($blue-cadet, 60%);
+                }
+            }
+        }
+
+        
+    }
+}

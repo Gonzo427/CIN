@@ -1,0 +1,42 @@
+#panel1{
+	.entry-content{
+		display: flex;
+	    justify-content: space-between;
+	    flex-wrap: wrap;
+	    align-items: flex-start;
+
+	    figure{
+	    	padding: 10px 15px;
+    		height: 100px;
+		    width: 32%;
+
+		    &.wp-caption{
+		    	&:hover{
+			    	.wp-caption-text {
+						transform: translateY(0px);
+						opacity: 1;
+					}
+		    	}
+				.wp-caption-text {
+					margin: 0.8075em 0;
+					opacity: 0;
+					transition: .25s linear;
+					text-align: center;
+					font-size: .9em;
+					background: $platinum;
+					padding: 5px;
+					transform: translateY(-50px);	
+		    	}
+		    	img[class*="wp-image-"]{
+		    		&:hover{
+		    			filter: gray; /* IE6-9 */
+					  	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+					  	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+		    		}
+		    	}
+		    	
+		    }
+
+		 } 
+	}
+}
