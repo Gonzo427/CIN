@@ -1,0 +1,26 @@
+.tmm{
+	.tmm_member{
+		webkit-box-shadow: none;
+	    -moz-box-shadow: none;
+	    box-shadow: none;
+
+	    .tmm_photo{
+	    	border: none;
+	    	border-radius: 0% !important;
+	    	margin-left: 0 !important;
+	    	margin-top: -40px;
+	    }
+	}
+
+	.tmm_names{
+		margin-top:-70px !important;
+		margin-left:115px !important;
+	}
+	.tmm_job{
+		color: $blue-cadet;
+    	margin-left: 100px;
+	}
+	.tmm_desc{
+		line-height: 1.75;
+	}
+}

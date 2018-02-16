@@ -1,4 +1,19 @@
+
 .page{
+	.intro{
+		font-size: 2em;
+		color: $blue-cadet;
+	}
+	.single-featured-image-header{
+		height: 400px;
+
+		img{
+			position: fixed;
+		}
+	}
+	.site-content-contain{
+		border-top: 5px solid $blue-cadet;
+	}
 	.panel-content{
 		.entry-header{
 			margin-bottom: 2em;
@@ -7,4 +22,13 @@
 			color: $blue-cadet;
 		}
 	}
+}
+body.page:not(.twentyseventeen-front-page){
+		.entry-title{
+			color: $blue-cadet;
+			    font-size: 24px;
+		}
+	} 
+section.error-404.not-found {
+    padding-top: 2em;
 }

@@ -1,18 +1,79 @@
-footer{
-	background: darken($blue, 5%);
+.site-footer{
+	background: darken($blue-cadet, 15%);
 	color: white;
+	.widget-area{
+		a{
+			color: white;
+			-webkit-box-shadow:none;
+			box-shadow:none;
+	}
+	section#search-3 {
+	    padding: 25px 40px 0px 0px;
+	    width: 90%;
 
-	h2.widget-title{
-		color: white;
+	    input{
+	    	padding: .5em;
+	    }
+	    button.search-submit{
+	    	background: $green-light;
+	    }
 	}
-	label{
-		color: white;
-		font-weight: 100;
-	}
-	input[type="submit"]{
-		background-color: $green-light;
-		&:hover{
-			background-color: lighten($green-light, 5%);
+}
+	.social-navigation{
+		a{
+			background-color: $green-light;
+			&:hover{
+				background-color: lighten($green-light, 10%);
+			}
 		}
 	}
+	.site-info{
+		a{
+			color: lighten($green-light, 55%);
+		    text-decoration: none;
+		    box-shadow: none;
+		}
+		
+	}
+	.widget-column{
+		&.footer-widget-1, &.footer-widget-2{
+			@media screen and (min-width: 48em){
+				width: 48%;
+			}
+		}
+		h2.widget-title{
+			color: white;
+		}
+		p{
+			display: flex;
+			 @media screen and (max-width:28em){
+				display: inline-block;
+			 }
+			label{
+				color: white;
+				font-weight: 100;
+				&#email, &#phone{
+					width: 45%;
+				    float: left;
+				    padding: 0 5% 0 0;
+				}
+			}
+		}
+		
+		input{
+			padding: .3em;
+			&[type="submit"]{
+				background-color: $green-light;
+				padding: .8em;
+				&:hover{
+					background-color: lighten($green-light, 10%);
+				}
+			}
+		}
+		textarea.wpcf7-form-control.wpcf7-textarea{
+			height: 120px;
+		}
+	}
+	
+
 }

@@ -1,0 +1,53 @@
+body.has-header-image {
+	
+	&.twentyseventeen-front-page{
+		@media screen and (min-width: 38em){
+			.custom-header{
+				text-align: center;
+				height: 75vh;
+			}
+		}
+	} 
+
+	.site-branding-text {
+	    display: inline-block;
+	    vertical-align: middle;
+	    transform: translateY(-40px);
+
+	    @media screen and (max-width:48em){
+	    	text-align: center;
+	    	transform: translateY(-170px);
+	    }
+	    @media screen and (max-width:28em){
+			transform: translateY(-220px);
+	     }
+
+	    .site-title {
+		    font-size: 1.4em;
+		    font-family: "Open Sans", sans-serif;
+		    color: $green-light;
+		    text-shadow: 1px 1px 1px rgba(255,255,255,.8);
+
+		    a{
+		    	color: $green-light;
+		    	&:hover{
+		    		opacity: 1;
+		    	}
+		    }
+	    }
+		p.site-description{
+			font-family: $font-header;
+			font-size: 4em;
+			opacity: 1;
+			@media screen and (max-width:48em){
+				font-size: 3em;
+				line-height: 1.2;
+			}
+		}
+	}
+
+
+
+
+
+}

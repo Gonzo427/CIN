@@ -1,0 +1,43 @@
+	//home page CTA buttons
+.cta-btns{
+	position: relative;
+	text-align: center;
+    @media screen and (min-width: 38em){
+		bottom: 5%;
+    }	
+    a.btn{
+		padding: 10px 35px;
+		margin-bottom: 0;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 1.42857143;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		border-radius: 4px;
+		text-decoration: none;
+		border-radius: 210px;
+		margin: 10px 10px;
+		background-color: $blue-cadet;
+		display: inline-block;
+		border: 2px solid #fff;
+		color: #fff;
+		transition: all linear .3s;
+		-webkit-transition: all linear .3s;	
+		
+		&:hover{
+			background: $green-light;
+			box-shadow: none;
+			color: #fff;
+		}
+    }
+}
+.home{
+	.cta-btns{
+		position: absolute;
+	    transform: translate(-50%, -10%);
+	    bottom: 15%;
+	    left: 50%;
+	    z-index:10;
+	}
+}

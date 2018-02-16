@@ -9,24 +9,42 @@
  */
 
 ?>
-<div class="custom-header">
+<?php	if (  twentyseventeen_is_frontpage()   ) :
+echo '<div class="custom-header">';
 
-		<div class="custom-header-media">
+	echo '<div class="custom-header-media">'; ?>
 			<?php the_custom_header_markup(); ?>
 
-		</div>
-
+<?php	echo '</div>'; ?>
 
 
 	<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
 
-<?php	if (  twentyseventeen_is_frontpage()   ) :
+<?php  ?>
+
+<?php
+	//global $post;
+	//$post = $wp_query->get_queried_object();
+	//$post = get_theme_mod( 'dropdownpages', '#' );
+
+	$post = get_theme_mod( 'dropdownpages-1', '#' );
+	$pagename1 = get_post_field( 'post_name', get_post() );
+
+	$post = get_theme_mod( 'dropdownpages-2', '#' );
+	$pagename2 = get_post_field( 'post_name', get_post() );
+
+	echo 'Page name: ' . $pagename;
 
 	echo '<div class="cta-btns">';
-	echo	'<a href="/join" class="btn">Join the Network</a>';
-	echo	'<a href="/apply" class="btn">Apply for Funding</a>';
+	echo '<a href=" ' . $pagename1 . ' " class="btn">';
+	echo get_theme_mod( 'button_1', 'Button 1' );
+	echo '</a>';
+	echo '<a href=" ' . $pagename2 . ' " class="btn">';
+	echo get_theme_mod( 'button_2', 'Button 2' );
+	echo '</a>';
 	echo '</div>';
 
 endif;
-	?>
-</div><!-- .custom-header -->
+	
+echo '</div>';
+?>

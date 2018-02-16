@@ -1,6 +1,16 @@
 .navigation-top {
+    z-index: 2;
+    &.site-navigation-fixed{
+        height: 80px;
+        .custom-logo-link{
+            img{
+                max-height: 65px;
+            }
+        }
+    }
     @media screen and (min-width: 48em){
-        bottom: auto;
+       // bottom: auto;
+        position: relative;
     }
     .site-navigation-wrapper{
         display: flex;

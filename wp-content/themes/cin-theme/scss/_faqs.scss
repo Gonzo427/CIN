@@ -1,0 +1,18 @@
+h4{
+	&.faq-toggle{
+		text-transform: uppercase;
+	    background: $blue-cadet;
+	    color: white;
+	    padding: 10px;
+	 //   cursor: pointer;
+	/*	&:after {
+		    content: '+';
+		    position: relative;
+		    left: 80px;
+		    color: $blue-cadet;
+		    font-size: 45px;
+		    cursor: pointer;
+		}*/
+	}
+
+}
