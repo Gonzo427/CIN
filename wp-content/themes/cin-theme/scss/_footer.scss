@@ -60,16 +60,7 @@
 			}
 		}
 		
-		input{
-			padding: .3em;
-			&[type="submit"]{
-				background-color: $green-light;
-				padding: .8em;
-				&:hover{
-					background-color: lighten($green-light, 10%);
-				}
-			}
-		}
+		
 		textarea.wpcf7-form-control.wpcf7-textarea{
 			height: 120px;
 		}

@@ -1,5 +1,9 @@
 .home{
-
+	#page{
+		.site-content-contain{
+			margin-top: 0 !important;
+		}
+	}
 	//home page section
 	article#post-8{
 		background: url(../assets/images/light-bulb.jpg);
@@ -10,6 +14,14 @@
 	    	background:#fff;
 	    	background: rgba(255,255,255,.5);
 	    }
+	}
+	#panel1 {
+
+	}
+	#panel2{
+		.hide-on-home {
+		    display: none;
+		}
 	}
 
 	.site-footer{

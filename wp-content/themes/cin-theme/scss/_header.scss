@@ -1,14 +1,13 @@
-body.has-header-image {
+body.has-header-image {	
 	
 	&.twentyseventeen-front-page{
 		@media screen and (min-width: 38em){
 			.custom-header{
 				text-align: center;
-				height: 75vh;
+				height: 85vh;
 			}
 		}
 	} 
-
 	.site-branding-text {
 	    display: inline-block;
 	    vertical-align: middle;
@@ -42,6 +41,21 @@ body.has-header-image {
 			@media screen and (max-width:48em){
 				font-size: 3em;
 				line-height: 1.2;
+			}
+		}
+	}
+
+	//sub-page header
+	.single-featured-image-header{
+		.entry-header{
+			h1{
+				position: absolute;
+			    z-index: 6;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+			    color: white;
+			    font-size: 3em;
 			}
 		}
 	}

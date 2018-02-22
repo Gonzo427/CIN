@@ -1,7 +1,8 @@
 .navigation-top {
-    z-index: 2;
+    z-index: 4;
     &.site-navigation-fixed{
         height: 80px;
+        transition: .5s all ease-in-out;
         .custom-logo-link{
             img{
                 max-height: 65px;
@@ -10,7 +11,8 @@
     }
     @media screen and (min-width: 48em){
        // bottom: auto;
-        position: relative;
+        top: 0;
+        height: 100px;
     }
     .site-navigation-wrapper{
         display: flex;
@@ -30,7 +32,12 @@
             }
             li{
                 &:hover{
-                    background: lighten($blue-cadet, 60%);
+                    background: $blue-cadet;
+                }
+                a{
+                    &:hover{
+                        color: lighten($green-light, 30%);
+                    }
                 }
             }
         }

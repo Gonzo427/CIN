@@ -4,6 +4,9 @@
 	    justify-content: space-between;
 	    flex-wrap: wrap;
 	    align-items: flex-start;
+	    h3{
+	    	text-align: center;
+	    }
 
 	    figure{
 	    	padding: 10px 15px;
@@ -54,6 +57,7 @@
 		    			filter: gray; /* IE6-9 */
 					  	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 					  	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+					  	opacity:0.8;
 		    		}
 		    	}
 		    	
