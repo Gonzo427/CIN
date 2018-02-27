@@ -1,4 +1,17 @@
 .tmm{
+	@media only screen and (max-width: 64.063em){
+		.tmm_2_columns .tmm_member{
+			margin-bottom: 10px !important;
+			.tmm_photo{
+				border: none;
+		    	border-radius: 0% !important;
+
+			}
+		} 
+	}
+
+
+
 	.tmm_member{
 		webkit-box-shadow: none;
 	    -moz-box-shadow: none;

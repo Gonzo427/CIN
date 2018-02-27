@@ -33,8 +33,6 @@ echo '<div class="custom-header">';
 	$post = get_theme_mod( 'dropdownpages-2', '#' );
 	$pagename2 = get_post_field( 'post_name', get_post() );
 
-	echo 'Page name: ' . $pagename;
-
 	echo '<div class="cta-btns">';
 	echo '<a href=" ' . $pagename1 . ' " class="btn slideUp">';
 	echo get_theme_mod( 'button_1', 'Button 1' );

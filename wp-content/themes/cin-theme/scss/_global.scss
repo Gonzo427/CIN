@@ -17,6 +17,20 @@ a{
 		color: lighten($green-light, 10%);
 	}
 }
+ul, ol {
+    margin: 0 0em 2em 2.5em;
+    li {
+	    padding-bottom: 10px;
+	    line-height: 1.8;
+	}
+}
+
+
+//change width of primary content area
+.single-post:not(.has-sidebar) #primary, .page.page-one-column:not(.twentyseventeen-front-page) #primary, .archive.page-one-column:not(.has-sidebar) .page-header, .archive.page-one-column:not(.has-sidebar) #primary{
+	max-width: 860px;
+}
+
 
 .entry-content a, .entry-summary a, .widget a, .site-footer .widget-area a, .posts-navigation a, .widget_authors a strong{
 	-webkit-box-shadow: none;

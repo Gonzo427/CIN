@@ -3,20 +3,29 @@
 		.site-content-contain{
 			margin-top: 0 !important;
 		}
+		.panel-content{
+			.entry-header{
+				margin-bottom: 1em;
+			}
+
+		}
 	}
 	//home page section
 	article#post-8{
-		background: url(../assets/images/light-bulb.jpg);
+		background: url(../assets/images/exploding-bulb.jpg);
 	    background-size: cover;
 	    background-position: left 30%;
 
 	    .panel-content{
 	    	background:#fff;
-	    	background: rgba(255,255,255,.5);
+	    	background: rgba(255,255,255,.6);
+	    	p{
+	    		color: #000;
+	    	}
 	    }
 	}
 	#panel1 {
-
+		//background: url(../assets/images/ecailles.png);
 	}
 	#panel2{
 		.hide-on-home {

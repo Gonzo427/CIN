@@ -4,7 +4,11 @@ body.has-header-image {
 		@media screen and (min-width: 38em){
 			.custom-header{
 				text-align: center;
-				height: 85vh;
+				height: calc(80vh - 32px);
+
+				.custom-header-media{
+					height: calc(80vh - 32px);
+				}
 			}
 		}
 	} 
@@ -15,7 +19,7 @@ body.has-header-image {
 
 	    @media screen and (max-width:48em){
 	    	text-align: center;
-	    	transform: translateY(-170px);
+	    	transform: translate(10px, -170px);
 	    }
 	    @media screen and (max-width:28em){
 			transform: translateY(-220px);
@@ -38,9 +42,9 @@ body.has-header-image {
 			font-family: $font-header;
 			font-size: 4em;
 			opacity: 1;
+			line-height: 1.2;
 			@media screen and (max-width:48em){
 				font-size: 3em;
-				line-height: 1.2;
 			}
 		}
 	}
@@ -50,18 +54,17 @@ body.has-header-image {
 		.entry-header{
 			h1{
 				position: absolute;
-			    z-index: 6;
-			    top: 50%;
-			    left: 50%;
-			    transform: translate(-50%, -50%);
-			    color: white;
+			    z-index: 3;
+			    top: 40%;
+			    color: #fff;
 			    font-size: 3em;
+			    width: 100%;
+			    text-align: center;
+
+			     @media screen and (max-width:48em){
+					top: 30%;
+			     }
 			}
 		}
 	}
-
-
-
-
-
 }

@@ -1,12 +1,18 @@
 .page{
+	&.page-one-column .entry-header{
+		margin-bottom: 0;
+	}
 	.intro{
 		font-size: 2em;
 		color: $blue-cadet;
+		margin-bottom: 1.2em;
 	}
 	.single-featured-image-header{
 		height: 400px;
 		margin-bottom: -50px;
-
+		@media screen and (max-width: 48em){
+			margin-bottom: -200px;
+		}
 		img{
 			position: fixed;
 		}
@@ -14,6 +20,9 @@
 	.site-content-contain{
 		border-top: 5px solid $blue-cadet;
 		margin-top: 50px;
+		@media screen and (max-width: 48em){
+			border-top: none;
+		 }
 	}
 	.panel-content{
 		.entry-header{
@@ -22,14 +31,55 @@
 		.entry-title{
 			color: $blue-cadet;
 		}
+		.wrap{
+			@media screen and (min-width: 48em){
+				padding-top: 3em;
+			}
+		}
 	}
+	//styling for Page with Sidebar
+	.has-sidebar{
+		div#primary{
+			@media screen and (min-width: 48em){
+				width: 67% !important;
+			}
+			
+			.entry-header{
+				margin-bottom: 0;
+			}
+		}
+		aside#secondary {
+		    padding-top: 75px !important;
+		    padding-bottom: 30px;
+		    background: #e9e9e9;
+		    @media screen and (min-width: 48em){
+			    width: 30%;
+			}
+		}
+	}
+	
 }
 body.page:not(.twentyseventeen-front-page){
 		.entry-title{
 			color: $blue-cadet;
 			    font-size: 24px;
 		}
-	} 
+} 
 section.error-404.not-found {
     padding-top: 2em;
 }
+
+//styling for Our Take page
+h2.our-take{
+	&:before{
+		content:'';
+		display: inline-block;
+	    margin-right: 10px;
+	    margin-bottom: 3px;
+	    border-top: 7px solid transparent;
+	    border-bottom: 7px solid transparent;
+	    border-left: 7px solid $blue-cadet;
+	    
+	}
+}
+

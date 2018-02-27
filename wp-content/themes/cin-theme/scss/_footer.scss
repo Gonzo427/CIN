@@ -1,6 +1,23 @@
 .site-footer{
 	background: darken($blue-cadet, 15%);
 	color: white;
+	h3{
+		color: white;
+	}
+	form{
+		input{
+		    width: 100% !important;
+		    &[type="submit"]{
+		    	width:auto !important;
+		    }
+		 }
+		 p{
+		 	line-height: 1;
+		 }
+	}
+	.widget{
+		padding-bottom: 0em;
+	}
 	.widget-area{
 		a{
 			color: white;
@@ -11,9 +28,7 @@
 	    padding: 25px 40px 0px 0px;
 	    width: 90%;
 
-	    input{
-	    	padding: .5em;
-	    }
+	    
 	    button.search-submit{
 	    	background: $green-light;
 	    }
@@ -37,17 +52,31 @@
 	}
 	.widget-column{
 		&.footer-widget-1, &.footer-widget-2{
-			@media screen and (min-width: 48em){
+			@media screen and (min-width: 37.5em){
 				width: 48%;
+			}
+		}
+		&.footer-widget-1{
+			@media screen and (min-width: 37.5em){
+				float: left;
+			}
+		}
+		&.footer-widget-2{
+			@media screen and (min-width: 37.5em){
+				float: right;
+			}
+			@media screen and (max-width: 28em){
+				margin-top: 3em;
 			}
 		}
 		h2.widget-title{
 			color: white;
+			font-size: 2em;
+			margin-bottom: 10px;
 		}
 		p{
 			display: flex;
 			 @media screen and (max-width:28em){
-				display: inline-block;
 			 }
 			label{
 				color: white;
@@ -59,11 +88,46 @@
 				}
 			}
 		}
+		section#search-2{
+			margin-top: 50px;
+		    border-top: 1px solid white;
+		    padding-top: 16px;
+
+		    h2{
+		    	font-size: 1em;
+		    }
+		    input{
+		    	padding: 10px !important;
+		    }
+		    .search-form .search-submit{
+		    	background: $green-light;
+
+		    	&:hover{
+		    		background: lighten($green-light, 20%);
+		    	}
+		    }
+		}
 		
 		
 		textarea.wpcf7-form-control.wpcf7-textarea{
-			height: 120px;
+			height: 80px;
 		}
+	}
+	.bottom-footer {
+	    background: $black;
+	    text-align: center;
+		.site-info, .social-navigation{
+			@media screen and (min-width: 30em){
+				width: 47%;
+				text-align: left;
+			}
+		}
+		.site-info{
+			@media screen and (min-width: 30em){
+				text-align: right;
+			}	
+		}
+
 	}
 	
 
