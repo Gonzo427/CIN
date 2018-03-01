@@ -14,33 +14,45 @@
 	    	text-align: center;
 	    }
 	.photobanner{
-		background: #fff;
+		display: flex;
+		flex-wrap: wrap;
+		 margin: 0 -10em;
+		/*background: #fff;
 		margin: 0px -16em;
 	    height: 210px;
 	    padding: 7px 0;
-	    overflow: hidden;
+	    overflow: hidden;*/
 	    @media screen and (max-width: 28em){
 			margin: 0;
-			height: auto;
+			/*height: auto;
 			overflow: visible;
 			display: flex;
-    		flex-wrap: wrap;
+    		flex-wrap: wrap;*/
 	    }
 			figure{
 				float: left;
     			padding: 0 10px;
     		    position: relative;
    				top: 0px;
+			    width: 18%;
+			    border: 2px solid $green-light;
+			    margin: 10px 1%;
    				 @media screen and (max-width: 28em){
 					float: none;
 					margin: 0 auto;
 					width: 50%;
    				 }
+   				 a{
+   				 	height: 40px;
+   				 	display: inline-block;
+   				 }
 			   	&.wp-caption{
 					.wp-caption-text {
 						font-style: normal;
-					    text-align: center;
-					    padding: 5px;
+					    padding: 0px 5px 10px;
+					    text-align: left;
+					    font-size: .95em;
+					    height: 110px;
 					    @media screen and (max-width: 28em){
 							border: none;
 							padding: 0 0 13px;
@@ -66,7 +78,7 @@
 						}*/
 			    	}
 			    	img[class*="wp-image-"]{
-			    	    max-width: 300px;
+			    	    max-width: 100%;
     					padding: 10px 25px;
 			    		transition: all .25s ease-in;
 			    		&:hover{

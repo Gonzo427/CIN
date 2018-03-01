@@ -1,7 +1,7 @@
 .navigation-top {
     z-index: 4;
     background: $blue-cadet;
-    padding: 5px 4px;
+    padding: 5px 4px    ;
     a{
         color: #fff;
     }
@@ -33,7 +33,7 @@
     .main-navigation{
         &.toggled-on > div > ul{
             position: absolute;
-            right: -5px;
+            right: -4px;
             top: 78px;
             opacity: .9;
             border: 1px solid #e3e3e3;
@@ -58,8 +58,12 @@
             }
             li{
                 z-index: 4;
+                padding: 0;
                 &:hover{
                     background: $blue-cadet;
+                    @media screen and (max-width: 48em){
+                        background: none;
+                    }
                 }
                 a{
                     color: $blue-cadet;
