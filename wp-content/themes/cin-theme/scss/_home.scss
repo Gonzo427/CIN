@@ -12,7 +12,8 @@
 	}
 	//home page section
 	article#post-8{
-		background: url(../assets/images/exploding-bulb.jpg);
+		//background: url(../assets/images/exploding-bulb.jpg);
+		background: lighten($blue-cadet, 60%);
 	    background-size: cover;
 	    background-position: left 30%;
 

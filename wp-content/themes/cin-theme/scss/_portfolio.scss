@@ -14,15 +14,18 @@
 	    	text-align: center;
 	    }
 	.photobanner{
+		@media screen and (min-width: 62em){
+ 			margin: 0 -10em;
+		}
 		display: flex;
 		flex-wrap: wrap;
-		 margin: 0 -10em;
+		margin: 0 -3em;
 		/*background: #fff;
 		margin: 0px -16em;
 	    height: 210px;
 	    padding: 7px 0;
 	    overflow: hidden;*/
-	    @media screen and (max-width: 28em){
+	    @media screen and (max-width: 48em){
 			margin: 0;
 			/*height: auto;
 			overflow: visible;
@@ -30,30 +33,47 @@
     		flex-wrap: wrap;*/
 	    }
 			figure{
+				@media screen and (min-width: 62em){
+					width: 18%;
+					max-width: 300px !important;
+				}
 				float: left;
-    			padding: 0 10px;
+    			padding: 0 7px;
     		    position: relative;
    				top: 0px;
-			    width: 18%;
+			    width: 23%;
 			    border: 2px solid $green-light;
 			    margin: 10px 1%;
-   				 @media screen and (max-width: 28em){
+			    @media screen and (min-width: 40em) and (max-width: 47.99em){
+					width: 31%;
+					border: 0;
+				    border-bottom: 4px solid green;
+				    padding: 0px 0px;
+			    }
+   				 @media screen and (max-width: 39.999em){
 					float: none;
+					border: none;
 					margin: 0 auto;
 					width: 50%;
    				 }
    				 a{
    				 	height: 40px;
    				 	display: inline-block;
+   				 	@media screen and (max-width: 39.99em){
+						height: 60px;
+   				 	}
    				 }
 			   	&.wp-caption{
 					.wp-caption-text {
 						font-style: normal;
-					    padding: 0px 5px 10px;
+					    padding: 0 5px 10px;
 					    text-align: left;
 					    font-size: .95em;
 					    height: 110px;
-					    @media screen and (max-width: 28em){
+					    @media screen and (min-width: 40em) and (max-width:47.99em){
+							padding-top:20px;
+					    }
+					    @media screen and (max-width: 39.999em){
 							border: none;
 							padding: 0 0 13px;
 					    }
@@ -78,8 +98,11 @@
 						}*/
 			    	}
 			    	img[class*="wp-image-"]{
+			    		@media screen and (min-width: 50em){
+							padding: 10px 25px;
+			    		}
 			    	    max-width: 100%;
-    					padding: 10px 25px;
+    					padding: 10px;
 			    		transition: all .25s ease-in;
 			    		&:hover{
 			    			filter: gray; /* IE6-9 */

@@ -25,9 +25,9 @@
 
 		<div class="site-branding-text">
 			<?php if ( is_front_page() ) : ?>
-				<h1 class="site-title">Welcome to the <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php endif; ?>
 
 			<?php
@@ -35,7 +35,8 @@
 
 			if ( $description || is_customize_preview() ) :
 			?>
-				<p class="site-description"><?php echo $description; ?></p>
+				<h1 class="site-description"><?php echo $description; ?></h1>
+				<h2>CIN is dedicated to helping fund the next generation of great cannabis companies</h2>
 				
 			<?php endif; ?>
 		</div><!-- .site-branding-text -->

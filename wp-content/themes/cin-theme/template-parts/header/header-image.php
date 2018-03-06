@@ -34,14 +34,15 @@ echo '<div class="custom-header">';
 	$pagename2 = get_post_field( 'post_name', get_post() );
 
 
-	echo '<div class="cta-btns">';
+	/*echo '<div class="cta-btns">';
 	echo '<a href=" ' . $pagename1 . ' " class="btn slideUp">';
 	echo get_theme_mod( 'button_1', 'Button 1' );
 	echo '</a>';
 	echo '<a href=" ' . $pagename2 . ' " class="btn slideUp">';
 	echo get_theme_mod( 'button_2', 'Button 2' );
 	echo '</a>';
-	echo '</div>';
+	echo '</div>';*/
+
 
 endif;
 	

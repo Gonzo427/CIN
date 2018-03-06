@@ -15,7 +15,7 @@ body.has-header-image {
 	.site-branding-text {
 	    display: inline-block;
 	    vertical-align: middle;
-	    transform: translateY(-40px);
+	    transform: translateY(20px);
 
 	    @media screen and (max-width:48em){
 	    	text-align: center;
@@ -38,7 +38,7 @@ body.has-header-image {
 		    	}
 		    }
 	    }
-		p.site-description{
+		h1.site-description{
 			font-family: $font-header;
 			font-size: 4em;
 			opacity: 1;
@@ -46,6 +46,11 @@ body.has-header-image {
 			@media screen and (max-width:48em){
 				font-size: 3em;
 			}
+		}
+		h2{
+			padding-bottom: 0;
+			color: #fff;
+			 font-size: 1.5em;
 		}
 	}
 
