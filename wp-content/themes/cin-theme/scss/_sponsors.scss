@@ -6,6 +6,7 @@
 		h2{
 			font-size: 3em;
 			text-align: center;
+			
 		}
 	}
 	.panel-image {
@@ -17,6 +18,10 @@
 	.entry-content{
 		background: #fff;
 		box-shadow: 0px 3px 9px 0px #efefef;
+		h2{
+			margin-top: 40px;
+    		margin-bottom: -10px;
+		}
 			.col2{
 				height: 180px;
 				padding: 10px 30px;

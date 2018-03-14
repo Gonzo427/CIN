@@ -47,6 +47,11 @@ ul, ol {
     width: 50%;
     float: left;
     padding: 0px 3%;
+    @media screen and (max-width:38em){
+    	width: 100%;
+    	float: none;
+    	padding: 5px;
+    }
 }
 
 //Special UI elements
@@ -77,9 +82,11 @@ span.small{
 }
 
 //images
-img.alignleft, img.alignright{
-	 @media screen and (max-width:28em){
+.alignleft, .alignright{
+	 @media screen and (max-width:38em){
 		display: block;
+		float: none;
+		margin: 0 auto;
 	 }	
 }
 

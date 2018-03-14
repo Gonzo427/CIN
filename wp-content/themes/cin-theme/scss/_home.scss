@@ -33,6 +33,18 @@
 		    display: none;
 		}
 	}
+	#panel3{
+		background: darken($green-light,15%);
+    	padding-bottom: 20px;
+    	h2{
+    		display: none;
+    	}
+    	.wrap{
+    		@media screen and (min-width: 48em){
+    			padding: 0 0 10px;
+    		}
+    	}
+	}
 
 	.site-footer{
 		@media screen and (min-width: 48em){

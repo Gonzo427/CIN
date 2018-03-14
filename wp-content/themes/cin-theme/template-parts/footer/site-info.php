@@ -11,5 +11,5 @@
 ?>
 <div class="site-info">
 	<a href="<?php echo esc_url( __( 'https://cannabisinvestmentnetwork.com/', 'twentyseventeen' ) ); ?>">
-		<?php printf( __( '&copy; ', 'twentyseventeen' ) );   ?> <?php echo date("Y"); ?></a>
+		<?php printf( __( '&copy; ', 'twentyseventeen' ) );   ?> <?php echo date("Y"); ?> Cannabis Investment Network</a>
 </div><!-- .site-info -->

@@ -17,13 +17,11 @@ body.has-header-image {
 	    vertical-align: middle;
 	    transform: translateY(20px);
 
-	    @media screen and (max-width:48em){
+	    @media screen and (max-width: 48em){
 	    	text-align: center;
-	    	transform: translate(10px, -170px);
+	    	transform: translate(0px, -100px);
 	    }
-	    @media screen and (max-width:28em){
-			transform: translateY(-220px);
-	     }
+	   
 
 	    .site-title {
 		    font-size: 1.4em;
@@ -43,6 +41,9 @@ body.has-header-image {
 			font-size: 4em;
 			opacity: 1;
 			line-height: 1.2;
+			@media screen and (min-width: 47em) and (max-width:53.5em){
+				font-size: 3.5em;
+			}
 			@media screen and (max-width:48em){
 				font-size: 3em;
 			}
@@ -65,9 +66,12 @@ body.has-header-image {
 			    font-size: 3em;
 			    width: 100%;
 			    text-align: center;
+			    text-shadow: 1px 1px 6px grey;
+
 
 			     @media screen and (max-width:48em){
 					top: 30%;
+					font-size: 2.7em;
 			     }
 			}
 		}

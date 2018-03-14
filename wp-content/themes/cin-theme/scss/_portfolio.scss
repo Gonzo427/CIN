@@ -13,6 +13,9 @@
 	    h3{
 	    	text-align: center;
 	    }
+	}
+
+}
 	.photobanner{
 		@media screen and (min-width: 62em){
  			margin: 0 -10em;
@@ -53,7 +56,7 @@
    				 @media screen and (max-width: 39.999em){
 					float: none;
 					border: none;
-					margin: 0 auto;
+					margin: 0 auto 40px;
 					width: 50%;
    				 }
    				 a{
@@ -69,7 +72,7 @@
 					    padding: 0 5px 10px;
 					    text-align: left;
 					    font-size: .95em;
-					    height: 110px;
+					    
 					    @media screen and (min-width: 40em) and (max-width:47.99em){
 							padding-top:20px;
 					    }
@@ -117,10 +120,9 @@
 
 			 } 
 
-	}
+		}
 
-	}
-}
+
 
 
 /*keyframe animations*/
